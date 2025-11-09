@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Service account or secrets
+serviceaccount.json
+*.pem
+*.key
+*.env
+
+# IDE junk
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
