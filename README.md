@@ -20,18 +20,18 @@ Before using this module, make sure:
 1. Play Console data export to Google Cloud Storage is enabled
 2. Your service account has Storage Object Viewer access
 3. You downloaded the serviceaccount.json file
-4. Your bucket contains the Play Console export structure:
+4. Your bucket / Uri Cloud Storage:
    ```
-   stats/installs/installs_<package_name>_YYYYMM_overview.csv
+   pubsite_prod_xxxxxxxxxxxxxxxxxxx
    ```
-
+   
 ## Usage Example
 
 ```python
 from src.playstore_stats import get_playstore_monthly_installs
 
 SERVICE_ACCOUNT_FILE = \"serviceaccount.json\"
-BUCKET = \"your-gcs-bucket\"
+BUCKET = \"pubsite_prod_xxxxxxxxxxxxxxxxxxx\"
 PACKAGE = \"com.example.app\"
 
 stats = get_playstore_monthly_installs(
