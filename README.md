@@ -1,4 +1,4 @@
-# PlayStore Monthly Installs Extractor
+# Google Play Console Monthly Downloads
 A lightweight Python module to retrieve monthly install statistics from the Google Play Console export bucket (Google Cloud Storage).
 The script:
 - Connects using a service account
